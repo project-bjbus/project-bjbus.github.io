@@ -1,1 +1,14 @@
-Hello World
+<html>
+    <head>
+        <script>
+            window.addEventListener('message', function(event) {
+                document.getElementById("output").innerHTML = event.data;
+            });
+        </script>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <iframe style="visibility: hidden; display: none;" src="data:text/html;base64,PGhlYWQ+DQo8bWV0YSBjaGFyc2V0PSJVVEYtOCI+DQo8c2NyaXB0IHNyYz0iaHR0cHM6Ly9wcm9qZWN0LWJqYnVzLmdpdGh1Yi5pby9qcy9tZDUuanMiPjwvc2NyaXB0Pg0KPHNjcmlwdCBzcmM9Imh0dHBzOi8vcHJvamVjdC1iamJ1cy5naXRodWIuaW8vanMvcGFrby5taW4uanMiPjwvc2NyaXB0Pg0KPHNjcmlwdCBzcmM9Imh0dHBzOi8vcHJvamVjdC1iamJ1cy5naXRodWIuaW8vanMvYmpidXMuanMiPjwvc2NyaXB0Pg0KPHNjcmlwdD5jcmF3bExpbmVzKCk7PC9zY3JpcHQ+DQo8L2hlYWQ+DQo="></iframe>
+        <pre id="output"></pre>
+    </body>
+</html>
